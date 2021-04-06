@@ -73,14 +73,25 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  #lezioni .row .left {
+  .row {
     width: 100%;
-    float: none;
-    background-color: blue;
   }
+  #lezioni {
+    background-color: #F2F2CD;
+  }
+  #lezioni .row .left,
   #lezioni .row .right {
-    width: 100%;
-    float: none;
-    background-color: blue;
+    width: calc(100% - 20px);
+  }
+
+  #steps .row .left,
+  #steps .row .central,
+  #steps .row .right  {
+    width: calc(100% - 20px);
+  }
+
+  #why {
+    width: calc(100% - 20px);
+    background-color: #F2F2CD;
   }
 }
